@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - TechMart</title>
+    <meta name="description" content="Sign in or create your TechMart account. Access your orders, wishlist, and personalized shopping experience.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>TechMart</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="MenuItems">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="Fashion.html" class="nav-link">Fashion</a></li>
+                    <li><a href="Electronics.html" class="nav-link">Electronics</a></li>
+                    <li><a href="audio.html" class="nav-link">Audio</a></li>
+                    <li><a href="about us.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="account.html" class="nav-link active">Account</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search products..." class="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <div class="hamburger" onclick="menutoggle()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Account Section -->
+    <main>
+    <section class="account-section fade-in-up">
+        <div class="container">
+            <div class="account-content">
+                <div class="account-benefits">
+                    <h2 class="welcome-heading">Welcome to TechMart!</h2>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-box"></i> Track your orders and view order history</li>
+                        <li><i class="fas fa-heart"></i> Save your favorite products to your wishlist</li>
+                        <li><i class="fas fa-bolt"></i> Enjoy faster checkout and personalized offers</li>
+                        <li><i class="fas fa-user-shield"></i> Secure, private, and easy account management</li>
+                    </ul>
+                </div>
+                <div class="account-form-block">
+                    <div class="form-toggle" role="tablist" aria-label="Account form tabs">
+                        <button id="loginToggle" class="toggle-btn active" role="tab" aria-selected="true" aria-controls="LoginForm">Login</button>
+                        <button id="registerToggle" class="toggle-btn" role="tab" aria-selected="false" aria-controls="RegForm">Register</button>
+                    </div>
+                    <form id="LoginForm" class="account-form" role="form" aria-labelledby="loginToggle" autocomplete="on">
+                        <div class="form-group">
+                            <label for="login-username">Username</label>
+                            <input type="text" id="login-username" name="username" placeholder="Enter your username" required autocomplete="username">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" name="password" placeholder="Enter your password" required autocomplete="current-password">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                        <span class="visually-hidden" id="login-error" aria-live="polite"></span>
+                    </form>
+                    <form id="RegForm" class="account-form" style="display:none;" role="form" aria-labelledby="registerToggle" autocomplete="on">
+                        <div class="form-group">
+                            <label for="register-username">Username</label>
+                            <input type="text" id="register-username" name="username" placeholder="Choose a username" required autocomplete="username">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">Email</label>
+                            <input type="email" id="register-email" name="email" placeholder="Enter your email" required autocomplete="email">
+                            <i class="fas fa-at"></i>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">Password</label>
+                            <input type="password" id="register-password" name="password" placeholder="Create a password" required autocomplete="new-password">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                        <span class="visually-hidden" id="register-error" aria-live="polite"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer fade-in-up">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>TechMart</span>
+                    </div>
+                    <p>Your one-stop destination for premium electronics and fashion. Quality products, competitive prices, and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Fashion.html">Fashion</a></li>
+                        <li><a href="Electronics.html">Electronics</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City, DC 12345</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> support@techmart.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechMart. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        var MenuItems = document.getElementById("MenuItems");
+        var hamburger = document.querySelector('.hamburger');
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "300px";
+                MenuItems.classList.add('active');
+                hamburger.classList.add('active');
+            } else {
+                MenuItems.style.maxHeight = "0px";
+                MenuItems.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        }
+        // Toggle between login and register
+        const loginToggle = document.getElementById('loginToggle');
+        const registerToggle = document.getElementById('registerToggle');
+        const loginForm = document.getElementById('LoginForm');
+        const regForm = document.getElementById('RegForm');
+        loginToggle.addEventListener('click', function() {
+            loginToggle.classList.add('active');
+            registerToggle.classList.remove('active');
+            loginForm.style.display = '';
+            regForm.style.display = 'none';
+            loginToggle.setAttribute('aria-selected', 'true');
+            registerToggle.setAttribute('aria-selected', 'false');
+            loginForm.setAttribute('tabindex', '0');
+            regForm.setAttribute('tabindex', '-1');
+            loginForm.querySelector('input').focus();
+        });
+        registerToggle.addEventListener('click', function() {
+            registerToggle.classList.add('active');
+            loginToggle.classList.remove('active');
+            regForm.style.display = '';
+            loginForm.style.display = 'none';
+            registerToggle.setAttribute('aria-selected', 'true');
+            loginToggle.setAttribute('aria-selected', 'false');
+            regForm.setAttribute('tabindex', '0');
+            loginForm.setAttribute('tabindex', '-1');
+            regForm.querySelector('input').focus();
+        });
+        // Login form submission
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Example validation (replace with real logic as needed)
+            const username = loginForm.username.value.trim();
+            const password = loginForm.password.value.trim();
+            const errorSpan = document.getElementById('login-error');
+            if (!username || !password) {
+                errorSpan.textContent = 'Please enter both username and password.';
+                showNotification('Please enter both username and password.', 'error');
+                return;
+            }
+            errorSpan.textContent = '';
+            showNotification('Login successful! Welcome back.', 'success');
+            loginForm.reset();
+        });
+        // Register form submission
+        regForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Example validation (replace with real logic as needed)
+            const username = regForm.username.value.trim();
+            const email = regForm.email.value.trim();
+            const password = regForm.password.value.trim();
+            const errorSpan = document.getElementById('register-error');
+            if (!username || !email || !password) {
+                errorSpan.textContent = 'Please fill in all fields.';
+                showNotification('Please fill in all fields.', 'error');
+                return;
+            }
+            errorSpan.textContent = '';
+            showNotification('Registration successful! You can now log in.', 'success');
+            regForm.reset();
+        });
+
+        // Notification system
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle'}"></i>
+                    <span>${message}</span>
+                    <button class="notification-close"><i class="fas fa-times"></i></button>
+                </div>
+            `;
+
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#2563eb'};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                z-index: 10000;
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+                max-width: 300px;
+            `;
+
+            notification.querySelector('.notification-content').style.cssText = `
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            `;
+
+            notification.querySelector('.notification-close').style.cssText = `
+                background: none;
+                border: none;
+                color: white;
+                cursor: pointer;
+                margin-left: auto;
+                padding: 0;
+            `;
+
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+
+            notification.querySelector('.notification-close').addEventListener('click', () => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            });
+
+            setTimeout(() => {
+                if (document.body.contains(notification)) {
+                    notification.style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        if (document.body.contains(notification)) {
+                            document.body.removeChild(notification);
+                        }
+                    }, 300);
+                }
+            }, 5000);
+        }
+
+        // Scroll to top functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Collection - TechMart</title>
+    <meta name="description" content="Shop premium electronics at TechMart. Find the latest smartphones, laptops, audio, and more with fast shipping and great prices.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+    <div class="container">
+            <nav class="navbar">
+            <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>TechMart</span>
+                    </a>
+            </div>
+                <ul class="nav-menu" id="MenuItems">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="Fashion.html" class="nav-link">Fashion</a></li>
+                    <li><a href="Electronics.html" class="nav-link active">Electronics</a></li>
+                    <li><a href="audio.html" class="nav-link">Audio</a></li>
+                    <li><a href="about us.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="account.html" class="nav-link">Account</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search products..." class="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <div class="hamburger" onclick="menutoggle()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Electronics Collection</h1>
+                <p>Shop the latest in smartphones, laptops, audio, and more</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Electronics</span>
+        </nav>  
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters and Sorting -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-content">
+                <div class="filters-left">
+                    <div class="filter-group">
+                        <label for="category-filter">Category:</label>
+                        <select id="category-filter" class="filter-select">
+                            <option value="">All Categories</option>
+                            <option value="smartphones">Smartphones</option>
+                            <option value="laptops">Laptops</option>
+                            <option value="audio">Audio</option>
+                            <option value="wearables">Wearables</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price-filter">Price Range:</label>
+                        <select id="price-filter" class="filter-select">
+                            <option value="">All Prices</option>
+                            <option value="0-200">Under ₹20,000</option>
+                            <option value="200-500">₹20,000 - ₹50,000</option>
+                            <option value="500-1000">₹50,000 - ₹1,00,000</option>
+                            <option value="1000+">Over ₹1,00,000</option>
+                        </select>
+    </div>
+    </div>
+                <div class="filters-right">
+                    <div class="filter-group">
+                        <label for="sort-filter">Sort by:</label>
+                        <select id="sort-filter" class="filter-select">
+                            <option value="popularity">Popularity</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Customer Rating</option>
+                            <option value="newest">Newest First</option>
+                </select>
+                    </div>
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="view-btn" data-view="list">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="smartphones" data-price="999">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&w=600&q=80" alt="Apple iPhone 14 Pro smartphone in silver on table">
+                        <div class="product-overlay">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                        <div class="product-badge sale">SALE</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>iPhone 14 Pro</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹82,000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" data-category="smartphones" data-price="799">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&w=600&q=80" alt="Samsung Galaxy S23 Ultra smartphone in hand">
+                        <div class="product-overlay">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                        <div class="product-badge new">NEW</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Samsung Galaxy S23 Ultra</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹65,000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-category="laptops" data-price="1299">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&w=600&q=80" alt="Apple MacBook Pro 16-inch M2 open on desk">
+                        <div class="product-overlay">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                        <div class="product-badge featured">FEATURED</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>MacBook Pro 16" M2</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹1,05,000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" data-category="laptops" data-price="999">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&w=600&q=80" alt="Dell XPS 13 laptop on workspace">
+                        <div class="product-overlay">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Dell XPS 13</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.7)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹80,000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card" data-category="wearables" data-price="399">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg?auto=compress&w=600&q=80" alt="Apple Watch Series 9 on wrist">
+                        <div class="product-overlay">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                        <div class="product-badge new">NEW</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Apple Watch Series 9</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹32,000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card" data-category="audio" data-price="349">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?auto=compress&w=600&q=80" alt="Sony WH-1000XM5 wireless headphones">
+                        <div class="product-overlay">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                        <div class="product-badge featured">FEATURED</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Sony WH-1000XM5</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹29,000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card" data-category="audio" data-price="129">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/374777/pexels-photo-374777.jpeg?auto=compress&w=600&q=80" alt="JBL Flip 6 portable Bluetooth speaker">
+                        <div class="product-overlay">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>JBL Flip 6 Speaker</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.7)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹10,500</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card" data-category="wearables" data-price="249">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg?auto=compress&w=600&q=80" alt="Fitbit Charge 6 fitness tracker on wrist">
+                        <div class="product-overlay">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Fitbit Charge 6</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹20,000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <div class="product-card" data-category="tablets" data-price="599">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/5082561/pexels-photo-5082561.jpeg?auto=compress&w=600&q=80" alt="Apple iPad Air 5th Gen tablet on table">
+                        <div class="product-overlay">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                        <div class="product-badge new">NEW</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>iPad Air 5th Gen</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.7)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹48,000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 10 -->
+                <div class="product-card" data-category="laptops" data-price="1499">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&w=600&q=80" alt="HP Spectre x360 14 convertible laptop">
+                        <div class="product-overlay">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                        <div class="product-badge featured">FEATURED</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>HP Spectre x360 14</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹1,20,000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <div class="product-card" data-category="audio" data-price="199">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?auto=compress&w=600&q=80" alt="Bose SoundLink Flex portable speaker">
+                        <div class="product-overlay">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                        <div class="product-badge sale">SALE</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Bose SoundLink Flex</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹16,000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                <div class="product-card" data-category="wearables" data-price="299">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg?auto=compress&w=600&q=80" alt="Garmin Venu Sq 2 smartwatch on wrist">
+                        <div class="product-overlay">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                        <div class="product-badge new">NEW</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Garmin Venu Sq 2</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.7)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹24,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+            <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>TechMart</span>
+                    </div>
+                    <p>Your one-stop destination for premium electronics and fashion. Quality products, competitive prices, and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Fashion.html">Fashion</a></li>
+                        <li><a href="Electronics.html">Electronics</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City, DC 12345</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> support@techmart.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechMart. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>          
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div id="quickViewModal" class="quick-view-modal" style="display:none;">
+      <div class="quick-view-content">
+        <button class="quick-view-close" id="quickViewClose"><i class="fas fa-times"></i></button>
+        <div class="quick-view-body">
+          <div class="quick-view-image">
+            <img id="quickViewImg" src="" alt="Product Image" />
+          </div>
+          <div class="quick-view-info">
+            <h4 id="quickViewName"></h4>
+            <div class="rating" id="quickViewRating"></div>
+            <div class="price">
+              <span class="current-price" id="quickViewCurrentPrice"></span>
+              <span class="original-price" id="quickViewOriginalPrice"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .quick-view-modal {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(30,41,59,0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 20000;
+        transition: background 0.3s;
+      }
+      .quick-view-content {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        max-width: 600px;
+        width: 95vw;
+        padding: 2rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        animation: fadeInUp 0.3s;
+      }
+      .quick-view-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #64748b;
+        cursor: pointer;
+        transition: color 0.2s;
+      }
+      .quick-view-close:hover { color: #ef4444; }
+      .quick-view-body {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+      }
+      .quick-view-image img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        background: #f8fafc;
+      }
+      .quick-view-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      @media (max-width: 600px) {
+        .quick-view-body { flex-direction: column; align-items: center; gap: 1rem; }
+        .quick-view-content { padding: 1rem; }
+        .quick-view-image img { width: 120px; height: 120px; }
+      }
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+        <script>
+        // Mobile menu toggle
+            var MenuItems = document.getElementById("MenuItems");
+        var hamburger = document.querySelector('.hamburger');
+            MenuItems.style.maxHeight = "0px";
+        
+            function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "300px";
+                MenuItems.classList.add('active');
+                hamburger.classList.add('active');
+            } else {
+                MenuItems.style.maxHeight = "0px";
+                MenuItems.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        }
+
+        // Search functionality
+        const searchInput = document.querySelector('.search-input');
+        const searchBtn = document.querySelector('.search-btn');
+        
+        function handleSearch() {
+            const query = searchInput.value.trim();
+            if (query) {
+                showNotification(`Searching for: "${query}"`, 'info');
+                searchInput.value = '';
+            }
+        }
+        
+        searchBtn.addEventListener('click', handleSearch);
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch();
+            }
+        });
+
+        // Quick view functionality
+        const quickViewButtons = document.querySelectorAll('.quick-view');
+        const quickViewModal = document.getElementById('quickViewModal');
+        const quickViewClose = document.getElementById('quickViewClose');
+        const quickViewImg = document.getElementById('quickViewImg');
+        const quickViewName = document.getElementById('quickViewName');
+        const quickViewRating = document.getElementById('quickViewRating');
+        const quickViewCurrentPrice = document.getElementById('quickViewCurrentPrice');
+        const quickViewOriginalPrice = document.getElementById('quickViewOriginalPrice');
+
+        quickViewButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const productCard = this.closest('.product-card');
+                const img = productCard.querySelector('img').src;
+                const name = productCard.querySelector('h4').textContent;
+                const ratingDiv = productCard.querySelector('.rating');
+                const currentPrice = productCard.querySelector('.current-price') ? productCard.querySelector('.current-price').textContent : '';
+                const originalPrice = productCard.querySelector('.original-price') ? productCard.querySelector('.original-price').textContent : '';
+
+                quickViewImg.src = img;
+                quickViewName.textContent = name;
+                quickViewCurrentPrice.textContent = currentPrice;
+                quickViewOriginalPrice.textContent = originalPrice;
+                quickViewRating.innerHTML = ratingDiv ? ratingDiv.innerHTML : '';
+
+                quickViewModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        quickViewClose.addEventListener('click', function() {
+            quickViewModal.style.display = 'none';
+            document.body.style.overflow = '';
+        });
+        quickViewModal.addEventListener('click', function(e) {
+            if (e.target === quickViewModal) {
+                quickViewModal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Filter functionality
+        const categoryFilter = document.getElementById('category-filter');
+        const priceFilter = document.getElementById('price-filter');
+        const sortFilter = document.getElementById('sort-filter');
+        const productsGrid = document.getElementById('productsGrid');
+
+        function filterProducts() {
+            const category = categoryFilter.value;
+            const priceRange = priceFilter.value;
+            const products = document.querySelectorAll('.product-card');
+
+            products.forEach(product => {
+                let show = true;
+                const productCategory = product.dataset.category;
+                const productPrice = parseInt(product.dataset.price);
+
+                // Category filter
+                if (category && productCategory !== category) {
+                    show = false;
+                }
+
+                // Price filter
+                if (priceRange) {
+                    const [min, max] = priceRange.split('-').map(p => p === '+' ? Infinity : parseInt(p));
+                    if (productPrice < min || (max !== Infinity && productPrice > max)) {
+                        show = false;
+                    }
+                }
+
+                product.style.display = show ? 'block' : 'none';
+            });
+        }
+
+        categoryFilter.addEventListener('change', filterProducts);
+        priceFilter.addEventListener('change', filterProducts);
+
+        // View toggle
+        const viewButtons = document.querySelectorAll('.view-btn');
+        viewButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                viewButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const view = this.dataset.view;
+                productsGrid.className = `products-grid ${view}-view`;
+            });
+        });
+
+        // Real Pagination for Electronics Products
+        const allProducts = Array.from(productsGrid.children).filter(el => el.classList.contains('product-card'));
+        const pageButtons = document.querySelectorAll('.page-btn');
+        const PRODUCTS_PER_PAGE = 8;
+
+        function showPage(page) {
+          // Hide all products
+          allProducts.forEach(el => el.style.display = 'none');
+          // Show only products for this page
+          const start = (page - 1) * PRODUCTS_PER_PAGE;
+          const end = start + PRODUCTS_PER_PAGE;
+          allProducts.slice(start, end).forEach(el => el.style.display = 'block');
+          // Update active button
+          pageButtons.forEach((btn, idx) => {
+            if (!btn.classList.contains('next')) {
+              btn.classList.toggle('active', idx === page - 1);
+            }
+          });
+        }
+
+        // Initial page load
+        showPage(1);
+
+        pageButtons.forEach((button, idx) => {
+          if (!button.classList.contains('next')) {
+            button.addEventListener('click', function() {
+              showPage(idx + 1);
+            });
+          }
+        });
+        // Next button
+        const nextBtn = document.querySelector('.page-btn.next');
+        if (nextBtn) {
+          nextBtn.addEventListener('click', function() {
+            const current = Array.from(pageButtons).findIndex(btn => btn.classList.contains('active'));
+            if (current < pageButtons.length - 2) {
+              showPage(current + 2);
+            }
+          });
+        }
+
+        // Scroll to top functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Notification system
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle'}"></i>
+                    <span>${message}</span>
+                    <button class="notification-close"><i class="fas fa-times"></i></button>
+                </div>
+            `;
+
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#2563eb'};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                z-index: 10000;
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+                max-width: 300px;
+            `;
+
+            notification.querySelector('.notification-content').style.cssText = `
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            `;
+
+            notification.querySelector('.notification-close').style.cssText = `
+                background: none;
+                border: none;
+                color: white;
+                cursor: pointer;
+                margin-left: auto;
+                padding: 0;
+            `;
+
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+
+            notification.querySelector('.notification-close').addEventListener('click', () => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            });
+
+            setTimeout(() => {
+                if (document.body.contains(notification)) {
+                    notification.style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        if (document.body.contains(notification)) {
+                            document.body.removeChild(notification);
+                        }
+                    }, 300);
+                }
+            }, 5000);
+        }
+
+        console.log('TechMart Electronics Page Loaded Successfully! 📱💻');
+        </script>
+        <script src="main.js"></script>
+</body>
+</html>
