@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // main.js - Shared JavaScript for TechMart
 
 // 1. Navigation: Hamburger menu, active link highlighting, accessibility
@@ -562,5 +561,4 @@ window.addEventListener('DOMContentLoaded', () => {
   setupCartPage();
   setupAddToCartButtons();
   // TODO: Add more feature initializations here
->>>>>>> 30b26ddb640fe52b0f6cd5967fde912f93744146
 }); 
