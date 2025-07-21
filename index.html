@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechMart - Premium Electronics & Fashion</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <meta name="description" content="TechMart: Discover premium electronics and fashion. Shop the latest tech, trendy clothing, and more with fast shipping and unbeatable prices.">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main navigation">
+        <div class="logo">
+          <a href="index.html">
+            <i class="fas fa-shopping-bag"></i>
+            <span>TechMart</span>
+          </a>
+        </div>
+        <ul class="nav-menu" id="MenuItems">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="Fashion.html" class="nav-link">Fashion</a></li>
+          <li><a href="Electronics.html" class="nav-link">Electronics</a></li>
+          <li><a href="audio.html" class="nav-link">Audio</a></li>
+          <li><a href="about us.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="account.html" class="nav-link">Account</a></li>
+          </ul>
+        <div class="nav-actions">
+          <div class="search-container">
+            <input type="text" placeholder="Search products..." class="search-input">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+          <a href="cart.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <div class="hamburger" onclick="menutoggle()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero fade-in-up">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Discover Premium<br>Tech & Fashion</h1>
+            <p>Experience the latest in technology and style. From cutting-edge electronics to trendy fashion, we've got everything you need to elevate your lifestyle.</p>
+            <div class="hero-buttons">
+              <a href="#featured" class="btn btn-primary">Shop Now</a>
+              <a href="#categories" class="btn btn-secondary">Explore Categories</a>
+            </div>
+        </div>
+          <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Premium tech and fashion products on display">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories fade-in-up" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <h2>Shop by Category</h2>
+          <p>Find exactly what you're looking for</p>
+        </div>
+        <div class="categories-grid">
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Electronics</h3>
+            <p>Latest smartphones, laptops & gadgets</p>
+            <a href="Electronics.html" class="category-link">Shop Electronics <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-tshirt"></i>
+            </div>
+            <h3>Fashion</h3>
+            <p>Trendy clothing & accessories</p>
+            <a href="Fashion.html" class="category-link">Shop Fashion <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-headphones"></i>
+            </div>
+            <h3>Audio</h3>
+            <p>Premium sound & wireless audio</p>
+            <a href="audio.html" class="category-link">Shop Audio <i class="fas fa-arrow-right"></i></a>
+    </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products fade-in-up" id="featured">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Products</h2>
+          <p>Handpicked products for you</p>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="iPhone 15 Pro smartphone">
+              <div class="product-overlay">
+                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4>iPhone 15 Pro</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(4.8)</span>
+              </div>
+              <div class="price">
+                <span class="current-price">₹82,000</span>
+                <span class="original-price">₹98,000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Wireless Headphones">
+              <div class="product-overlay">
+                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4>Sony WH-1000XM5</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(4.6)</span>
+              </div>
+              <div class="price">
+                <span class="current-price">₹29,000</span>
+                <span class="original-price">₹33,000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Smart Watch">
+              <div class="product-overlay">
+                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4>Apple Watch Series 9</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(4.9)</span>
+              </div>
+              <div class="price">
+                <span class="current-price">₹32,000</span>
+                <span class="original-price">₹36,000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1099&q=80" alt="Laptop">
+              <div class="product-overlay">
+                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4>MacBook Pro M3</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(4.7)</span>
+              </div>
+              <div class="price">
+                <span class="current-price">₹1,65,000</span>
+                <span class="original-price">₹1,80,000</span>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Customers Say</h2>
+          <p>Real reviews from satisfied customers</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>"Amazing quality products and fast delivery. The customer service is exceptional. Highly recommend!"</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Sarah Johnson">
+              <div class="author-info">
+                <h4>Sarah Johnson</h4>
+                <p>Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>"Best prices I've found online. The product selection is incredible and everything arrives in perfect condition."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Michael Chen">
+              <div class="author-info">
+                <h4>Michael Chen</h4>
+                <p>Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>"I love the user-friendly website and the detailed product descriptions. Makes shopping so much easier!"</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Emily Rodriguez">
+              <div class="author-info">
+                <h4>Emily Rodriguez</h4>
+                <p>Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Stay Updated</h2>
+          <p>Get the latest deals and product updates delivered to your inbox</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer fade-in-up">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-shopping-bag"></i>
+            <span>TechMart</span>
+          </div>
+          <p>Your one-stop destination for premium electronics and fashion. Quality products, competitive prices, and exceptional service.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Fashion.html">Fashion</a></li>
+            <li><a href="Electronics.html">Electronics</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City, DC 12345</p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> support@techmart.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 TechMart. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick View Modal -->
+  <div id="quickViewModal" class="quick-view-modal" style="display:none;">
+    <div class="quick-view-content">
+      <button class="quick-view-close" id="quickViewClose"><i class="fas fa-times"></i></button>
+      <div class="quick-view-body">
+        <div class="quick-view-image">
+          <img id="quickViewImg" src="" alt="Product Image" />
+        </div>
+        <div class="quick-view-info">
+          <h4 id="quickViewName"></h4>
+          <div class="rating" id="quickViewRating"></div>
+          <div class="price">
+            <span class="current-price" id="quickViewCurrentPrice"></span>
+            <span class="original-price" id="quickViewOriginalPrice"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .quick-view-modal {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(30,41,59,0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 20000;
+      transition: background 0.3s;
+    }
+    .quick-view-content {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+      max-width: 600px;
+      width: 95vw;
+      padding: 2rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      animation: fadeInUp 0.3s;
+    }
+    .quick-view-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: #64748b;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .quick-view-close:hover { color: #ef4444; }
+    .quick-view-body {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .quick-view-image img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      background: #f8fafc;
+    }
+    .quick-view-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    @media (max-width: 600px) {
+      .quick-view-body { flex-direction: column; align-items: center; gap: 1rem; }
+      .quick-view-content { padding: 1rem; }
+      .quick-view-image img { width: 120px; height: 120px; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scrollToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Menu Toggle JS -->
+  <script>
+    // Mobile menu toggle
+    var MenuItems = document.getElementById("MenuItems");
+    var hamburger = document.querySelector('.hamburger');
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "300px";
+        MenuItems.classList.add('active');
+        hamburger.classList.add('active');
+      } else {
+        MenuItems.style.maxHeight = "0px";
+        MenuItems.classList.remove('active');
+        hamburger.classList.remove('active');
+      }
+    }
+
+    // Search functionality
+    const searchInput = document.querySelector('.search-input');
+    const searchBtn = document.querySelector('.search-btn');
+    
+    function handleSearch() {
+      const query = searchInput.value.trim();
+      if (query) {
+        showNotification(`Searching for: "${query}"`, 'info');
+        // Here you would typically implement actual search functionality
+        searchInput.value = '';
+      }
+    }
+    
+    searchBtn.addEventListener('click', handleSearch);
+    searchInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        handleSearch();
+      }
+    });
+
+    // Quick view functionality
+    const quickViewButtons = document.querySelectorAll('.quick-view');
+    const quickViewModal = document.getElementById('quickViewModal');
+    const quickViewClose = document.getElementById('quickViewClose');
+    const quickViewImg = document.getElementById('quickViewImg');
+    const quickViewName = document.getElementById('quickViewName');
+    const quickViewRating = document.getElementById('quickViewRating');
+    const quickViewCurrentPrice = document.getElementById('quickViewCurrentPrice');
+    const quickViewOriginalPrice = document.getElementById('quickViewOriginalPrice');
+
+    quickViewButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const productCard = this.closest('.product-card');
+        const img = productCard.querySelector('img').src;
+        const name = productCard.querySelector('h4').textContent;
+        const ratingDiv = productCard.querySelector('.rating');
+        const currentPrice = productCard.querySelector('.current-price').textContent;
+        const originalPrice = productCard.querySelector('.original-price').textContent;
+
+        quickViewImg.src = img;
+        quickViewName.textContent = name;
+        quickViewCurrentPrice.textContent = currentPrice;
+        quickViewOriginalPrice.textContent = originalPrice;
+        quickViewRating.innerHTML = ratingDiv ? ratingDiv.innerHTML : '';
+
+        quickViewModal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    quickViewClose.addEventListener('click', function() {
+      quickViewModal.style.display = 'none';
+      document.body.style.overflow = '';
+    });
+    quickViewModal.addEventListener('click', function(e) {
+      if (e.target === quickViewModal) {
+        quickViewModal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Newsletter form submission
+    const newsletterForm = document.querySelector('.newsletter-form');
+    newsletterForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = this.querySelector('input[type="email"]').value;
+      if (email) {
+        showNotification('Thank you for subscribing!', 'success');
+        this.reset();
+      }
+    });
+
+    // Scroll to top functionality
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('visible');
+      } else {
+        scrollToTopBtn.classList.remove('visible');
+      }
+    });
+    
+    scrollToTopBtn.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Notification system
+    function showNotification(message, type = 'info') {
+      const notification = document.createElement('div');
+      notification.className = `notification notification-${type}`;
+      notification.innerHTML = `
+        <div class="notification-content">
+          <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle'}"></i>
+          <span>${message}</span>
+          <button class="notification-close"><i class="fas fa-times"></i></button>
+        </div>
+      `;
+
+      // Add styles
+      notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#2563eb'};
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        z-index: 10000;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        max-width: 300px;
+      `;
+
+      notification.querySelector('.notification-content').style.cssText = `
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      `;
+
+      notification.querySelector('.notification-close').style.cssText = `
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-left: auto;
+        padding: 0;
+      `;
+
+      document.body.appendChild(notification);
+
+      // Animate in
+      setTimeout(() => {
+        notification.style.transform = 'translateX(0)';
+      }, 100);
+
+      // Close button functionality
+      notification.querySelector('.notification-close').addEventListener('click', () => {
+        notification.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+          document.body.removeChild(notification);
+        }, 300);
+      });
+
+      // Auto remove after 5 seconds
+      setTimeout(() => {
+        if (document.body.contains(notification)) {
+          notification.style.transform = 'translateX(100%)';
+          setTimeout(() => {
+            if (document.body.contains(notification)) {
+              document.body.removeChild(notification);
+            }
+          }, 300);
+        }
+      }, 5000);
+    }
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('.header');
+      if (window.scrollY > 100) {
+        header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+        header.style.backdropFilter = 'blur(10px)';
+      } else {
+        header.style.backgroundColor = 'var(--bg-primary)';
+        header.style.backdropFilter = 'none';
+      }
+    });
+
+    // Product card hover effects
+    const productCards = document.querySelectorAll('.product-card');
+    productCards.forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-8px)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+      });
+    });
+
+    // Category card hover effects
+    const categoryCards = document.querySelectorAll('.category-card');
+    categoryCards.forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-6px)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+      });
+    });
+
+    // Add loading animation to images
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      img.addEventListener('load', function() {
+        this.style.opacity = '1';
+      });
+      
+      img.style.opacity = '0';
+      img.style.transition = 'opacity 0.3s ease';
+    });
+
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements for animation
+    document.querySelectorAll('.product-card, .category-card, .testimonial-card').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.navbar') && MenuItems.classList.contains('active')) {
+        menutoggle();
+      }
+    });
+
+    // Add product badges
+    const firstProduct = document.querySelector('.product-card:nth-child(1) .product-image');
+    const badge = document.createElement('div');
+    badge.className = 'product-badge sale';
+    badge.textContent = 'SALE';
+    firstProduct.appendChild(badge);
+
+    const secondProduct = document.querySelector('.product-card:nth-child(2) .product-image');
+    const badge2 = document.createElement('div');
+    badge2.className = 'product-badge new';
+    badge2.textContent = 'NEW';
+    secondProduct.appendChild(badge2);
+
+    console.log('TechMart - Modern E-commerce Website Loaded Successfully! ��️');
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
