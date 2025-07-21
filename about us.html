@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -145,3 +146,152 @@
     <script src="main.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TechMart</title>
+    <meta name="description" content="Learn about TechMart: our story, values, and commitment to quality and customer satisfaction.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <i class="fas fa-shopping-bag"></i>
+          <span>TechMart</span>
+        </a>
+      </div>
+      <ul class="nav-menu" id="MenuItems">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="Fashion.html" class="nav-link">Fashion</a></li>
+        <li><a href="Electronics.html" class="nav-link">Electronics</a></li>
+        <li><a href="audio.html" class="nav-link">Audio</a></li>
+        <li><a href="about us.html" class="nav-link active">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="account.html" class="nav-link">Account</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-container">
+          <input type="text" placeholder="Search products..." class="search-input">
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <a href="cart.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+        <div class="hamburger" onclick="menutoggle()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <main>
+    <!-- Modern About Section -->
+    <section class="about-section fade-in-up">
+      <div class="container">
+        <div class="about-header">
+          <h1>About TechMart</h1>
+          <p>TechMart is your trusted destination for premium electronics and fashion. We believe in making the latest technology and style accessible, affordable, and enjoyable for everyone.</p>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="About TechMart">
+          </div>
+          <div class="about-text">
+            <h2>Our Story</h2>
+            <p>Founded in 2024, TechMart was born from a passion for innovation and a desire to connect people with the best products the world has to offer. From humble beginnings, we have grown into a leading online retailer, serving thousands of happy customers with a curated selection of electronics, fashion, and lifestyle essentials.</p>
+            <p>We are committed to providing a seamless shopping experience, exceptional customer service, and unbeatable value. Our team works tirelessly to source the latest gadgets, trendiest apparel, and must-have accessories, ensuring you always have access to the best.</p>
+            <div class="about-values">
+              <div class="value-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Innovation</h3>
+                <p>We embrace change and constantly seek new ways to improve your shopping experience.</p>
+              </div>
+              <div class="value-card">
+                <i class="fas fa-users"></i>
+                <h3>Customer Focus</h3>
+                <p>Your satisfaction is our top priority. We listen, adapt, and deliver on our promises.</p>
+              </div>
+              <div class="value-card">
+                <i class="fas fa-globe"></i>
+                <h3>Accessibility</h3>
+                <p>We believe everyone deserves access to quality products, wherever they are.</p>
+              </div>
+              <div class="value-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Sustainability</h3>
+                <p>We are committed to responsible sourcing and reducing our environmental impact.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer fade-in-up">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and iOS mobile devices</p>
+                    <div class="app-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png" width="120" alt="Google Play Store">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="120" alt="App Store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" width="125px" alt="Amazon Logo">
+                    <p>Our Purpose is to Sustainably Make the Pleasure and 
+                       benefits of shopping Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>          
+    </div>
+    </main>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "250px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
+>>>>>>> 30b26ddb640fe52b0f6cd5967fde912f93744146

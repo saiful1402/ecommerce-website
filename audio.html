@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -294,4 +295,302 @@
 
   <script src="main.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop the best audio gear at TechMart. Headphones, earbuds, and speakers from top brands, all in one place.">
+  <title>Audio Products - TechMart</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <i class="fas fa-shopping-bag"></i>
+            <span>TechMart</span>
+          </a>
+        </div>
+        <ul class="nav-menu" id="MenuItems">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="Fashion.html" class="nav-link">Fashion</a></li>
+          <li><a href="Electronics.html" class="nav-link">Electronics</a></li>
+          <li><a href="audio.html" class="nav-link active">Audio</a></li>
+          <li><a href="about us.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="account.html" class="nav-link">Account</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="search-container">
+            <input type="text" placeholder="Search products..." class="search-input">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+          <a href="cart.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <div class="hamburger" onclick="menutoggle()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header fade-in-up">
+    <div class="container">
+      <div class="page-header-content">
+        <h1>Audio Collection</h1>
+        <p>Experience music and sound like never before. Shop the latest headphones, earbuds, and speakers from top brands at TechMart.</p>
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Audio</span>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters and Sorting -->
+  <section class="filters-section fade-in-up">
+    <div class="container">
+      <div class="filters-content">
+        <div class="filters-left">
+          <div class="filter-group">
+            <label for="category-filter">Category:</label>
+            <select id="category-filter" class="filter-select">
+              <option value="">All Categories</option>
+              <option value="headphones">Headphones</option>
+              <option value="earbuds">Earbuds</option>
+              <option value="speakers">Speakers</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="price-filter">Price Range:</label>
+            <select id="price-filter" class="filter-select">
+              <option value="">All Prices</option>
+              <option value="0-150">Under ₹150</option>
+              <option value="150-300">₹150 - ₹300</option>
+              <option value="300+">Over ₹300</option>
+            </select>
+          </div>
+        </div>
+        <div class="filters-right">
+          <div class="filter-group">
+            <label for="sort-filter">Sort by:</label>
+            <select id="sort-filter" class="filter-select">
+              <option value="popularity">Popularity</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Customer Rating</option>
+              <option value="newest">Newest First</option>
+            </select>
+          </div>
+          <div class="view-toggle">
+            <button class="view-btn active" data-view="grid">
+              <i class="fas fa-th"></i>
+            </button>
+            <button class="view-btn" data-view="list">
+              <i class="fas fa-list"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <main>
+    <section class="products-section fade-in-up">
+      <div class="container">
+        <div class="products-grid" id="productsGrid">
+          <div class="product-card" data-category="headphones" data-price="349">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80" alt="Sony WH-1000XM5">
+              <div class="product-overlay">
+                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4>Sony WH-1000XM5</h4>
+              <p>Industry-leading noise cancellation, wireless freedom, and up to 30 hours battery life.</p>
+              <div class="price">
+                <span class="current-price">₹349</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card" data-category="earbuds" data-price="279">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80" alt="Bose QuietComfort Earbuds">
+              <div class="product-overlay">
+                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4>Bose QuietComfort Earbuds</h4>
+              <p>True wireless, world-class noise cancellation, and crystal-clear calls.</p>
+              <div class="price">
+                <span class="current-price">₹279</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card" data-category="earbuds" data-price="249">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80" alt="Apple AirPods Pro">
+              <div class="product-overlay">
+                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4>Apple AirPods Pro</h4>
+              <p>Active noise cancellation, transparency mode, and a customizable fit.</p>
+              <div class="price">
+                <span class="current-price">₹249</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card" data-category="speakers" data-price="129">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="JBL Flip 6 Speaker">
+              <div class="product-overlay">
+                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4>JBL Flip 6 Speaker</h4>
+              <p>Bold sound, portable design, and up to 12 hours of playtime. Waterproof and durable.</p>
+              <div class="price">
+                <span class="current-price">₹129</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card" data-category="earbuds" data-price="229">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=400&q=80" alt="Samsung Galaxy Buds2 Pro">
+              <div class="product-overlay">
+                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4>Samsung Galaxy Buds2 Pro</h4>
+              <p>Hi-Fi sound, intelligent ANC, and seamless connectivity with Galaxy devices.</p>
+              <div class="price">
+                <span class="current-price">₹229</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card" data-category="headphones" data-price="149">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Marshall Major IV">
+              <div class="product-overlay">
+                <button class="quick-view"><i class="fas fa-eye"></i></button>
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h4>Marshall Major IV</h4>
+              <p>Iconic sound, 80+ hours wireless playtime, and classic Marshall design.</p>
+              <div class="price">
+                <span class="current-price">₹149</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer fade-in-up">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-headphones"></i>
+            <span>TechMart</span>
+          </div>
+          <p>Your one-stop destination for premium electronics and fashion. Quality products, competitive prices, and exceptional service.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Fashion.html">Fashion</a></li>
+            <li><a href="Electronics.html">Electronics</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City, DC 12345</p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> support@techmart.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 TechMart. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick View Modal -->
+  <div id="quickViewModal" class="quick-view-modal" style="display:none;">
+    <div class="quick-view-content">
+      <button class="quick-view-close" id="quickViewClose"><i class="fas fa-times"></i></button>
+      <div class="quick-view-body">
+        <div class="quick-view-image">
+          <img id="quickViewImg" src="" alt="Product Image" />
+        </div>
+        <div class="quick-view-info">
+          <h4 id="quickViewName"></h4>
+          <p id="quickViewDesc" style="color: #64748b; font-size: 1rem;"></p>
+          <div class="price" id="quickViewPrice"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+>>>>>>> 30b26ddb640fe52b0f6cd5967fde912f93744146
 </html> 
